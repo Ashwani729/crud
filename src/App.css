@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-head{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+  font-size: x-large;
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input:not([type=radio]) {
+  width: 100%;
+  height: 30px;
+  padding: 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radio label, input[type=radio] {
+  cursor: pointer;
+}
+
+label .mandatory{
+  color: red;
+  font-size: unset;
+}
+
+.mandatory{
+  color: red;
+  font-size: 13px;
+}
+
+textarea{
+  padding: 2px 5px;
+  resize: none;
+}
+
+.button-red {
+  width: 70px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 6px;
+  background-color: orangered;
+  color: white;
+}
+.button-blue{
+  width: 70px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 6px;
+  background-color: #4169E1;
+  color: white;
+}
+.addButton{
+  width: 200px;
+    height: 41px;
+    padding: 0 5px;
+    border-radius: 6px;
+    background-color: #4169E1;
+    color: white;
+    font-weight: 700;
+
+}
+
+.card {
+  margin: auto;
+  display: table;
+  box-shadow: 0 0 2px 0 #888888;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+.circle{
+  width: 17px;
+  height: 17px;
+  
+  border-radius: 100%;
+  margin-top: 9px;
+}
+.card .form {
+  width: 400px;
+  padding: 30px 40px;
+}
+
+.card .space {
+  margin: 15px 0;
+}
+
+.card .title p {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card .account {
+  color: blue;
+  cursor: pointer;
+}
+.card-container {
+  /* width:30%; */
+  width: 400px;
+  margin-right: 28px;
+  margin-bottom: 28px;
+  display: flex;
+  border-width: 2px;
+  height: 250px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+  border-radius: 30px;
+  
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.eventPage {
+  width: 70%;
+  margin: auto;
+  
+  width: 90%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    justify-content: center;
+}
+
+.table {
+  width: 100%;
+}
+
+.table button{
+  padding: 2px;
+  width: 50px;
+  height: unset;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px 5px;
+}
+
+th {
+  text-align: left;
+}
+.card-name{
+  font-size: x-large;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+.sub{
+  font-weight: 100;
+    padding-right: 15px;
 }
